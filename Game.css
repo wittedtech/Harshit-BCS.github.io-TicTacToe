@@ -1,0 +1,244 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+body.dark {
+    background-color: #333;
+    color: #f2f2f2;
+}
+
+body.green {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+body.aqua {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+body.purple {
+    background-color: #9c27b0;
+    color: #fff;
+}
+
+body.orange {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+header {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #ff6347;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#slogan {
+    margin: 10px 0;
+    font-style: italic;
+    color: #666;
+}
+
+#theme-dropdown {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#player-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#player1, #player2 {
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#game-count {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cell {
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.cell:hover {
+    background-color: #d9d9d9;
+}
+
+.cell.x {
+    color: #ff4d4d;
+}
+
+.cell.o {
+    color: #4d94ff;
+}
+
+#message {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: #ff4d4d;
+}
+
+.win-animation {
+    animation: win-celebration 1s ease-in-out;
+}
+
+@keyframes win-celebration {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+body.light #game-board {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.light .cell {
+    background-color: #e6e6e6;
+    color: #333;
+}
+
+body.light .cell:hover {
+    background-color: #d9d9d9;
+}
+
+body.dark #game-board {
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .cell {
+    background-color: #555;
+    color: #f2f2f2;
+}
+
+body.dark .cell:hover {
+    background-color: #666;
+}
+
+body.green #game-board {
+    background-color: #66bb6a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.green .cell {
+    background-color: #81c784;
+    color: #fff;
+}
+
+body.green .cell:hover {
+    background-color: #a5d6a7;
+}
+
+body.aqua #game-board {
+    background-color: #26c6da;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.aqua .cell {
+    background-color: #4dd0e1;
+    color: #fff;
+}
+
+body.aqua .cell:hover {
+    background-color: #80deea;
+}
+
+body.purple #game-board {
+    background-color: #ab47bc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.purple .cell {
+    background-color: #ba68c8;
+    color: #fff;
+}
+
+body.purple .cell:hover {
+    background-color: #ce93d8;
+}
+
+body.orange #game-board {
+    background-color: #ffb74d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.orange .cell {
+    background-color: #ffcc80;
+    color: #fff;
+}
+
+body.orange .cell:hover {
+    background-color: #ffe0b2;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="Game.css">
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe</h1>
+        <p id="slogan"></p>
+        <div id="theme-dropdown">
+            <select id="theme-select">
+                <option value="default">System (Default)</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="grey">Grey</option>
+                <option value="green">Green</option>
+                <option value="aqua">Aqua</option>
+            </select>
+        </div>
+    </header>
+    <div id="player-info">
+        <div id="player1">
+            <span id="player1-name"></span>
+            <span id="player1-score">0</span>
+        </div>
+        <div id="player2">
+            <span id="player2-name"></span>
+            <span id="player2-score">0</span>
+        </div>
+        <span id="game-count">Total Games: 0</span>
+    </div>
+    <div id="game-board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+    <div id="message"></div>
+    <div id="buttons">
+        <button id="reset-btn">Reset Board</button>
+        <button id="quit-btn">Quit Game</button>
+    </div>
+    <script src="GameLogic.js"></script>
+</body>
+</html>
